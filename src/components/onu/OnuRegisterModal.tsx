@@ -16,11 +16,11 @@ export default function OnuRegisterModal({ board, pon, data, onClose, onSuccess 
     const [code, setCode] = useState(data.code || '');
     const [vlanId, setVlanId] = useState(data.vlan_id || '');
     const [isSubmitting, setIsSubmitting] = useState(false); // ✅ New state
-    const [baseURL, setBaseURL] = useState('http://113.192.12.120:8081');
+    const [baseURL, setBaseURL] = useState('http://192.168.12.10:8081');
 
     useEffect(() => {
         if (typeof window !== 'undefined') {
-            const savedURL = localStorage.getItem('baseURL') || 'http://113.192.12.120:8081';
+            const savedURL = localStorage.getItem('baseURL') || 'http://192.168.12.10:8081';
             setBaseURL(savedURL);
         }
     }, []);
