@@ -42,7 +42,7 @@ const OnuUnregisterModal: React.FC<Props> = ({ onClose }) => {
     }, []);
 
     return (
-        <div className="fixed inset-0 bg-black/40 backdrop-blur-sm flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-black/40 flex items-center justify-center z-50">
             <div className="bg-white dark:bg-gray-900 text-black dark:text-white rounded-xl shadow-xl p-6 max-w-3xl w-full relative">
                 <h2 className="text-xl font-bold mb-4">Daftar ONU Belum Terdaftar</h2>
 
