@@ -9,7 +9,7 @@ interface Props {
 
 export default function OnuDetailModal({ detail, onClose }: Props) {
     return (
-        <div className="fixed inset-0 bg-black/40 backdrop-blur-sm flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-black/40 flex items-center justify-center z-50">
             <div className="bg-white dark:bg-gray-900 text-gray-800 dark:text-white rounded-xl shadow-xl p-6 max-w-2xl w-full relative animate-fadeIn">
                 <button onClick={onClose} className="absolute top-2 right-2 text-gray-400 hover:text-gray-700 dark:hover:text-white transition">✕</button>
                 <h2 className="text-lg font-semibold mb-4">🔍 Detail ONU ID {detail.onu_id}</h2>
