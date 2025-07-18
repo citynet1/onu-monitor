@@ -17,7 +17,7 @@ const OnuUnregisterModal: React.FC<Props> = ({ onClose }) => {
     const [data, setData] = useState<OnuUnactivated[]>([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
-    const [baseURL, setBaseURL] = useState('http://113.192.12.120:8081');
+    const [baseURL, setBaseURL] = useState('http://192.168.12.10:8081');
 
     useEffect(() => {
         const fetchUnactivatedOnu = async () => {
@@ -34,7 +34,7 @@ const OnuUnregisterModal: React.FC<Props> = ({ onClose }) => {
             }
         };
         if (typeof window !== 'undefined') {
-            const savedURL = localStorage.getItem('baseURL') || 'http://113.192.12.120:8081';
+            const savedURL = localStorage.getItem('baseURL') || 'http://192.168.12.10:8081';
             setBaseURL(savedURL);
         }
 
